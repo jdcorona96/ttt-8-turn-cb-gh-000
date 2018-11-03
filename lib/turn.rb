@@ -1,3 +1,7 @@
+def introduction
+  puts "Welcome to Tic Tac Toe!"
+end
+
 def display_board(board)
 
   puts " #{board[0]}" | " #{board[1]}" | " #{board[2]} "
@@ -14,7 +18,13 @@ def valid_move?(board, index)
       return true
     end
   end
+end
 
   false
 
-def
+def move(board, index, mark="X")
+
+  if valid_move?(board, index) then
+    board[index] = mark
+  end
+end
