@@ -11,6 +11,10 @@ def display_board(board)
   puts " #{board[6]}" | " #{board[7]}" | " #{board[8]} "
 end
 
+def input_to_index(input)
+  input.strip.to_i
+end
+
 def valid_move?(board, index)
 
   if 0 <= index && index < 9 then
